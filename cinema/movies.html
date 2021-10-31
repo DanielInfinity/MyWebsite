@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+
+.logo img{
+    width: 20vmin;
+}
+
+ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 25px 15px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-size: 3vmin;
+}
+button{
+    text-decoration: none;
+    color: whitesmoke;
+    border: 1.5px solid whitesmoke;
+    padding: 2vmin 3vmin;
+    background: transparent;
+    font-size: 3vmin;
+    margin-top: 30px;
+    transition: 0.5s;
+    font-weight: bold;
+    cursor: pointer;}
+
+
+
+button:hover{
+    background: whitesmoke;
+    color: black;
+    border: 1.5px solid whitesmoke;
+}
+
+.content h1{
+    font-family: sans-serif;
+    font-size: 10vmin;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+hr{
+    margin-top: 50px;
+}
+
+.col{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+.card{
+    background-image: url(building.png);
+    display: inline-block;
+    border-radius: 10px;
+    width: 363px; 
+    height: 505px;
+   
+    margin: 55px 40px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.card button{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.5vmin;
+    margin-top: 85vmin;
+    padding: 10px 20px;
+    background: transparent;
+    border: solid red 1.5px;
+    color: white;
+    border-radius: 20px;
+    transition: 0.5s;
+
+}
+
+.card button:hover{
+    background: red;
+    color: white;
+}
+
+
+
+.card1{
+    background-image: url(assets/007.jpg);
+   
+}
+
+.card2{
+    background-image: url(assets/DS.jpg);
+    
+}
+
+.card3{
+    background-image: url(assets/HS.jpg);
+}
+
+.card4{
+    background-image: url(assets/spider.jpg);
+}
+
+.card5{
+    background-image: url(assets/Strange.jpg);
+}
+
+.card6{
+    background-image: url(assets/thor.jpg);
+}
+
+.card7{
+    background-image: url(assets/mad.jpg);
+}
+
+.card8{
+    background-image: url(assets/venom.jpg);
+}
+
+.card9{
+    background-image: url(assets/alien.jpg);
+}
+
+.card10{
+    background-image: url(assets/guy.jpg);
+}
+
+.card11{
+    background-image: url(assets/king.jpg);
+}
+
+.card12{
+    background-image: url(assets/rampage.jpg);
+}
+
+.card13{
+    background-image: url(assets/guardians.jpg);
+}
+
+.card14{
+    background-image: url(assets/zombies.jpg);
+}
+
+.card15{
+    background-image: url(assets/journey.jpg);
+}
+
+.card16{
+    background-image: url(assets/horror.jpg);
+}
+
+.card17{
+    background-image: url(assets/wwz.jpg);
+}
+
+.card18{
+    background-image: url(assets/divergent.jpg);
+}
+
+.card19{
+    background-image: url(assets/JW1.jpg);
+}
+
+.card20{
+    background-image: url(assets/JW2.jpg);
+}
+
+.card21{
+    background-image: url(assets/JW3.jpg);
+}
+
+.card22{
+    background-image: url(assets/horror1.jpg);
+}
+
+.card23{
+    background-image: url(assets/horror3.jpg);
+}
+
+.card24{
+    background-image: url(assets/horror2.jpg);
+}
+
+
+.card25{
+    background-image: url(assets/jr.jpg);
+}
+
+.card26{
+    background-image: url(assets/rambo.jpg);
+}
+
+.card27{
+    background-image: url(assets/dl.jpg);
+}
+
+.card28{
+    background-image: url(assets/fallen1.jpg);
+}
+
+.card29{
+    background-image: url(assets/fallen2.jpg);
+}
+
+.card30{
+    background-image: url(assets/fallen3.jpg);
+}
+
+.card31{
+    background-image: url(assets/dc3.jpg);
+}
+
+.card32{
+    background-image: url(assets/dc1.jpg);
+}
+
+.card33{
+    background-image: url(assets/steel.jpg);
+}
+
+.card34{
+    background-image: url(assets/bb.jpg);
+}
+
+.card35{
+    background-image: url(assets/osiris.jpg);
+}
+
+.card36{
+    background-image: url(assets/io.jpg);
+}
+
+.card37{
+    background-image: url(assets/bb.jpg);
+}
+
+.card38{
+    background-image: url(assets/osiris.jpg);
+}
+
+.card39{
+    background-image: url(assets/io.jpg);
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <div class="logo">
+            <img src="assets/logo.png">
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="#"><button>Sign Up</button></a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1>Movies</h1>
+    </div>
+    <hr>
+
+    <div class="col">
+        <div class="card card1"> 
+            <button>Download Now</button>
+            
+        </div>
+                
+        <div class="card card2"> 
+            <button>Download Now</button>
+            
+        </div>  
+               
+        <div class="card card3"> 
+            <button>Download Now</button>
+           
+        </div>    
+                
+        <div class="card card4"> 
+            <button>Download Now</button>
+            
+        </div>
+               
+        <div class="card card5"> 
+            <button>Download Now</button>
+            
+        </div>    
+               
+        <div class="card card6"> 
+            <button>Download Now</button>
+           
+        </div>
+
+        <div class="card card7"> 
+            <button>Download Now</button>
+           
+        </div>
+
+        <div class="card card8"> 
+            <button>Download Now</button>
+           
+        </div>
+
+        <div class="card card9"> 
+            <button>Download Now</button>
+           
+        </div>
+
+        <div class="card card10"> 
+            <button>Download Now</button>
+           
+        </div>
+
+        <div class="card card11"> 
+            <button>Download Now</button>
+           
+        </div>
+
+        <div class="card card12"> 
+            <button>Download Now</button>
+           
+        </div>
+
+        <div class="card card13"> 
+            <button>Download Now</button>
+           
+        </div>
+
+        <div class="card card14"> 
+            <button>Download Now</button>
+           
+        </div>
+
+        <div class="card card15"> 
+            <button>Download Now</button>
+           
+        </div>
+
+        <div class="card card16"> 
+            <button>Download Now</button>
+           
+        </div>
+
+        <div class="card card17"> 
+            <button>Download Now</button>
+           
+        </div>
+
+        <div class="card card18"> 
+            <button>Download Now</button>
+           
+        </div>
+
+        <div class="card card19"> 
+            <button>Download Now</button>
+           
+        </div>
+
+        <div class="card card20"> 
+            <button>Download Now</button>
+           
+        </div>
+
+        <div class="card card21"> 
+            <button>Download Now</button>
+           
+        </div>
+
+        <div class="card card22"> 
+            <button>Download Now</button>
+           
+        </div>
+
+        <div class="card card23"> 
+            <button>Download Now</button>
+           
+        </div>
+
+        <div class="card card24"> 
+            <button>Download Now</button>
+           
+        </div>
+
+        <div class="card card25"> 
+            <button>Download Now</button>
+           
+        </div>
+
+        <div class="card card26"> 
+            <button>Download Now</button>
+           
+        </div>
+
+        <div class="card card27"> 
+            <button>Download Now</button>
+           
+        </div>
+
+        <div class="card card28"> 
+            <button>Download Now</button>
+           
+        </div>
+
+        <div class="card card29"> 
+            <button>Download Now</button>
+           
+        </div>
+
+        <div class="card card30"> 
+            <button>Download Now</button>
+           
+        </div>
+
+        <div class="card card31"> 
+            <button>Download Now</button>
+           
+        </div>
+
+        <div class="card card32"> 
+            <button>Download Now</button>
+           
+        </div>
+
+        <div class="card card33"> 
+            <button>Download Now</button>
+           
+        </div>
+
+        <div class="card card34"> 
+            <button>Download Now</button>
+           
+        </div>
+
+        <div class="card card35"> 
+            <button>Download Now</button>
+           
+        </div>
+
+        <div class="card card36"> 
+            <button>Download Now</button>
+           
+        </div>
+
+    </div>
+
+    
+
+</body>
+</html>

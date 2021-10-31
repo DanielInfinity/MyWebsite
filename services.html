@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+
+    <style>
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    padding: 0 1%;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+
+ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 30px 15px;
+    
+}
+
+.logo img{
+    width: 100px; 
+    cursor: pointer; 
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.navbar ul li a:hover{
+    color: gold;
+}
+
+.container h1{
+    font-size: 45px;
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: whitesmoke;
+    align-items: center;
+    padding-left: 10%;
+    padding-top: 15%;
+}
+.container p{
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    padding-left: 10%;
+    padding-top: 25px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.container img{
+    width: 1000px;
+}
+
+.col{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.col a{
+    list-style-type: none;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.card{
+    background-image: url(images/restaurant.png);
+    display: inline-block;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    padding: 15px 25px;
+    margin: 15px 15px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.card1{
+    background-image: url(images/restaurant.png);
+}
+
+.card2{
+    background-image: url(images/gaming.jpg);
+}
+
+.card3{
+    background-image: url(images/library.jpg);
+}
+
+.card4{
+    background-image: url(images/cinema.jpg);
+}
+
+.card5{
+    background-image: url(images/education.jpg);
+}
+
+.card6{
+    background-image: url(images/amusement.png);
+}
+
+.card h5{
+    font-size: 20px;
+    color: white;
+
+}
+.card p{
+    font-weight: bold;
+    color: whitesmoke;
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" >
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+            <li><a href="location.html">Location</a></li>
+            
+        </ul>
+   
+    </div>  
+
+    <div class="container">
+        <div class="letter">
+            <h1>Our Services</h1>
+            <p>Our customers and members are provided with high quality services from our official partners and our company. Our services are awarded by many international organizations.</p>
+        </div>
+
+        <img src="images/grass.gif" >
+
+    </div>
+
+    <hr>
+
+    <div class="col">
+        <a href="connect/restaurant.html">
+            <div class="card card1">
+                <h5>Our Resraurant</h5>
+                <p>Healthy and Delicious Food prepared by pro chefs </p>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="card card2">
+                <h5>Gaming</h5>
+                <p>Top high end gaming systems with a gaming server</p>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="card card3">
+                <h5>Our Library</h5>
+                <p>Wide collections of books suited for different categories </p>
+            </div>
+        </a>
+
+        <a href="cinema/index.html">
+            <div class="card card4">
+                <h5>Our Cinema</h5>
+                <p>High resolution experience with best entertainment systems </p>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="card card5">
+                <h5>Education</h5>
+                <p>Education is important that's why we provide this service to make money </p>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="card card6">
+                <h5>Amusement park</h5>
+                <p>Wide varieties of rides suited for both children and adults </p>
+            </div>
+        </a>
+    </div>
+
+  
+
+   
+
+    
+    
+</body>
+</html>

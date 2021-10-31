@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location</title>
+</head>
+
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: black;
+    background-image: url(images/lamp.png);
+    width: 100%;
+    height: 100vh;
+    padding: 0 1%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+
+ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 30px 15px;
+    
+}
+
+.logo img{
+    width: 100px; 
+    cursor: pointer; 
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.navbar ul li a:hover{
+    color: gold;
+}
+
+.map{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.container{
+    display: flex;
+    margin-top: 20px;
+}
+
+
+.icons img{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons h1{
+    margin-right: 87%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    color: whitesmoke;
+    font-size: 15px;
+    padding-top: 10px;
+    margin-left: 5px;
+}
+.icon2{
+    display: flex;
+    justify-content: space-between;
+
+}
+.icon2 img{
+    width: 40px;
+    height: 40px;
+    margin-left: 150px;
+    
+}
+.icon2 h1{
+    margin-right: 87%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    color: whitesmoke;
+    font-size: 15px;
+    padding-top: 10px;
+    margin-left: 5px;
+}
+
+.icon3{
+    display: flex;
+    justify-content: space-between;
+
+}
+.icon3 img{
+    width: 40px;
+    height: 40px;
+    margin-left: 150px;
+}
+.icon3 h1{
+    margin-right: 87%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    color: whitesmoke;
+    font-size: 15px;
+    padding-top: 10px;
+    margin-left: 5px;
+}
+
+
+
+
+
+</style>
+
+<body>
+    
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" >
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+            <li><a href="location.html">Location</a></li>
+            
+        </ul>
+        
+        
+    </div>
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d954.9382889406286!2d96.16604471815224!3d16.788952223570913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ec911f3a3bb9%3A0xafb987711ef3a624!2s34%20Daw%20Thein%20Tin%20St%2C%20Yangon!5e0!3m2!1sen!2smm!4v1629446559940!5m2!1sen!2smm" width="850" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+ 
+     <div class="container">
+   
+        <div class="icons">
+            <img src="images/gmail.png">
+            <h1>infintydaniel@gmail.com</h1>
+         </div>
+
+       <div class="icon2">
+           <img src="images/phone.png">
+           <h1>09965132342</h1>
+       </div>  
+
+       <div class="icon3">
+           <img src="images/location.png">
+           <h1>Yangon(Rangoon)</h1>
+       </div>
+     
+        
+
+     </div>
+
+</body>
+</html>

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+   
+    
+    <style>
+   
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.logo {
+    align-items: center;
+    text-align: center;
+}
+
+.logo img{
+    width: 130px;
+    height: 130px;
+}
+
+.nav ul{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.753);
+    padding-top: 5px;
+    padding-bottom: 5px; 
+}
+
+.nav ul li {
+    display: inline-block;
+    list-style-type: none;
+        
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 30px 45px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 120%;
+    font-weight: 320;
+    transition: 0.5s;
+
+}
+
+.nav ul li a:hover{
+    color: tomato;
+}
+
+.title h1{
+    text-align: center;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300; 
+    margin-top: 50px;
+    font-size: 55px;
+}
+
+h2{
+    text-align: center;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300; 
+    margin-top: 50px;
+    font-size: 35px;
+}
+
+hr{
+    margin-top: 50px;
+}
+
+.breakfast h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 350;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.col{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+.card{
+    background-image: url(building.png);
+    display: inline-block;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    padding: 15px 25px;
+    margin: 35px 40px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+h3{
+    margin-top: 300px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.card1{
+    background-image: url(fried\ rice.png);
+}
+
+.card2{
+    background-image: url(noodles.png);
+}
+
+.card3{
+    background-image: url(pancake.png);
+}
+
+.card4{
+    background-image: url(bacon.png);
+}
+
+.card5{
+    background-image: url(samosa.png);
+}
+
+.card6{
+    background-image: url(sushi.png);
+}
+
+.card7{
+    background-image: url(steak.png);
+}
+
+.card8{
+    background-image: url(soup.png);
+}
+
+.card9{
+    background-image: url(salad.png);
+}
+
+.card10{
+    background-image: url(shrimp.png);
+}
+
+.card11{
+    background-image: url(duck.png);
+}
+
+.card12{
+    background-image: url(eggs.png);
+}
+
+.card13{
+    background-image: url(potatoes.png);
+}
+
+.card14{
+    background-image: url(chicken\ soup.png);
+}
+
+.card15{
+    background-image: url(meatball.png);
+}
+
+.card16{
+    background-image: url(omelet.png);
+}
+
+.card17{
+    background-image: url(lasagna.png);
+}
+
+.card18{
+    background-image: url(sausage.png);
+}
+
+.card19{
+    background-image: url(burger.png);
+}
+
+.card20{
+    background-image: url(French\ fries.png);
+}
+
+.card21{
+    background-image: url(pizza.png);
+}
+
+.card22{
+    background-image: url(popcorn.png);
+}
+
+.card23{
+    background-image: url(tacos.png);
+}
+
+.card24{
+    background-image: url(ice\ cream.png);
+}
+
+.card25{
+    background-image: url(coffee.png);
+}
+
+.card26{
+    background-image: url(milkshakes.png);
+}
+
+.card27{
+    background-image: url(cola.png);
+}
+
+.card28{
+    background-image: url(wine.png);
+}
+
+.card29{
+    background-image: url(beer.png);
+}
+
+.card30{
+    background-image: url(alchol.png);
+}
+
+
+button{
+    padding: 5px 15px;
+    margin-top: 5px;
+    border: 1.5px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    background: transparent;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s;  
+}
+
+button:hover{
+    background: rgb(41, 41, 41);
+    color: white;
+}
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="nav">
+
+        <div class="logo">
+            <img src="logo.png">  
+        </div>
+        
+        <ul>
+            <li><a href="restaurant.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="specials.html">Specials</a></li>
+            
+        </ul>
+    </div>
+
+    <div class="title">
+        <h1>ORDER MENU</h1>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <div class="breakfast">
+            <h1>BREAKFAST</h1>
+
+
+         <div class="col">
+            <div class="card card1"> 
+                <h3>FRIED RICE</h3>
+                <button>$5</button>
+            </div>
+                    
+            <div class="card card2"> 
+                <h3>NOODLES</h3>
+                <button>$7</button>
+            </div>  
+                   
+            <div class="card card3"> 
+                <h3>PANCAKES</h3>
+                <button>$10</button>
+            </div>    
+                    
+            <div class="card card4"> 
+                <h3>BACON AND EGGS</h3>
+                <button>$8</button>
+            </div>
+                   
+            <div class="card card5"> 
+                <h3>SAMOSA</h3>
+                <button>$3</button>
+            </div>    
+                   
+            <div class="card card6"> 
+                <h3>SUSHI</h3>
+                <button>$12</button>
+            </div>
+
+        </div>
+
+         <hr>
+         <div class="breakfast">
+            <h1>LUNCH</h1>
+
+
+         <div class="col">
+            <div class="card card7"> 
+             <h3>STEAK</h3>
+             <button>$25</button>
+            </div>
+                    
+            <div class="card card8"> 
+                <h3>FRENCH SOUP</h3>
+                <button>$13</button>
+            </div>  
+                   
+            <div class="card card9"> 
+                <h3>SALAD</h3>
+                <button>$12</button>
+            </div>    
+                    
+            <div class="card card10"> 
+                <h3>SHRIMP</h3>
+                <button>$13</button>
+            </div>
+                   
+            <div class="card card11"> 
+                <h3>ROASTED DUCK</h3>
+                <button>$56</button>
+            </div>    
+                   
+            <div class="card card12"> 
+                <h3>EGG SALAD</h3>
+                <button>$20</button>
+            </div>
+
+        </div>
+
+        <hr>
+        <div class="breakfast">
+            <h1>DINNER</h1>
+
+
+         <div class="col">
+            <div class="card card13"> 
+             <h3>MASHED POTATOES</h3>
+             <button>$12</button>
+            </div>
+                    
+            <div class="card card14"> 
+                <h3>CHICKEN SOUP</h3>
+                <button>$20</button>
+            </div>  
+                   
+            <div class="card card15"> 
+                <h3>MEATBALLS</h3>
+                <button>$35</button>
+            </div>    
+                    
+            <div class="card card16"> 
+                <h3>OMELET</h3>
+                <button>$7</button>
+            </div>
+                   
+            <div class="card card17"> 
+                <h3>LASAGNA</h3>
+                <button>$27</button>
+            </div>    
+                   
+            <div class="card card18"> 
+                <h3>GRILLED SAUSAGES</h3>
+                <button>$12</button>
+            </div>
+
+        </div>
+        
+        <hr>
+        <div class="breakfast">
+            <h1>FAST FOOD</h1>
+
+
+         <div class="col">
+            <div class="card card19"> 
+             <h3>BURGER</h3>
+             <button>$10</button>
+            </div>
+                    
+            <div class="card card20"> 
+                <h3>FRENCH FRIES</h3>
+                <button>$5</button>
+            </div>  
+                   
+            <div class="card card21"> 
+                <h3>PIZZA</h3>
+                <button>$27</button>
+            </div>    
+                    
+            <div class="card card22"> 
+                <h3>POPCORN</h3>
+                <button>$5</button>
+            </div>
+                   
+            <div class="card card23"> 
+                <h3>TACOS</h3>
+                <button>$15</button>
+            </div>    
+                   
+            <div class="card card24"> 
+                <h3>ICE CREAM</h3>
+                <button>$17</button>
+            </div>
+
+        </div>
+
+        <hr>
+        <div class="breakfast">
+            <h1>DRINKS</h1>
+
+
+         <div class="col">
+            <div class="card card25"> 
+             <h3>COFFEE</h3>
+             <button>$3</button>
+            </div>
+                    
+            <div class="card card26"> 
+                <h3>MILKSHAKES</h3>
+                <button>$12</button>
+            </div>  
+                   
+            <div class="card card27"> 
+                <h3>COLA</h3>
+                <button>$5</button>
+            </div>    
+                    
+            <div class="card card28"> 
+                <h3>WINE</h3>
+                <button>$250</button>
+            </div>
+                   
+            <div class="card card29"> 
+                <h3>BEER</h3>
+                <button>$45</button>
+            </div>    
+                   
+            <div class="card card30"> 
+                <h3>ALCHOL</h3>
+                <button>$50</button>
+            </div>
+
+        </div>
+
+       <hr>
+       <h2>HOME DELIVERY IS ALSO AVALIABLE</h2> 
+       
+    </div>
+    
+    </div>
+
+</body>
+</html>
